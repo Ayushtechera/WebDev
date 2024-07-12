@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="AyushKashyap">
+        <meta name="description" content="This page contains all the things i am learning how to create as i learn HTML. ">
+        <link rel="icon" href="image/trialfinal.png" type="image/x-icon"> 
+        <link rel="stylesheet" href="darktheme.css" type="text/css">
+        <title>My first Web page</title>
+        
+    </head>
+
+    <body>
+        <header>
+            <h1>My bucket list and Career journey</h1>
+
+            <nav aria-label="primary-navigation">
+                <ul>
+                    <li>
+                        <a href="#learnings"> Learning Journey</a>
+                    </li>
+                    <li>
+                        <a href="#bucketlist">Bucket List</a>
+                    </li>
+                    <li>
+                        <a href="#Contact">Contact Me</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr>
+        <main>
+            <article id="learnings">
+                <h2>I'm Ready to roll</h2>
+                <p>This is my first web page </p>
+                <section>
+                    <h3>HTML5</h3>
+                    <img src="image/htmlLogo.png" alt="HTML Logo" title="This is my first Html Page Image" width="225" height="225" loading="lazy"> 
+                    <figure>
+                        <figcaption>Example of html code.</figcaption>
+                        <p>
+                            <code>&lt;h1&gt; Hello World! &lt;/h1&gt;</code>
+                        </p>                                                                           
+                    </figure>
+                </section>
+
+                <section>
+                    <h3>My Daily Schedule</h3>
+                    <p>let me tell you:</p>
+                
+                    <!-- Example of ordered List -->
+                    <ol>
+                    <li>Start with web dev</li>
+                    <li>DSA in java</li>
+                    <li>practice Questions</li>
+                    </ol>
+                    <aside>
+                        <details>
+                            <summary>Guess the <mark> number of hours </mark> i code per day</summary>
+                            <p>I start coding from <time datetime="08:00">8 Am</time>at  and i code <time datetime="PT3H"> 3 hours</time> every day!</p>
+                        </details>
+                    </aside>
+                    <br>
+                    <table>
+                        <caption>My Daily Schedule</caption>
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th scope = "col">Time</th>
+                                <th scope = "col">Activity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Morning</th>
+                                <td>
+                                    <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+                                </td>
+                                <td>Write Code</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Break</th>
+                                <td>
+                                    <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+                                </td>
+                                <td>Eat Lunch</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Evening</th>
+                                <td rowspan="2">All Other Time</td>
+                                <td>Free Time</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Night</th>
+                                <td>Sleep</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3"> And that's what i do every day,5 days a week just Eat,Sleep,Code...Repeat!</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+            </article>
+
+        
+            <hr>  <!--this hr tag will add horizontal line to your web page to devide the content of your page-->
+
+            <article id="bucketlist">
+                    <h3>want to build & drone specs are:</h3>
+                    <!-- exmple of unordered list -->
+                    <ul>
+                        <li><p><abbr title="First Person View"><a href="https://store.dji.com/content/fpv-drones">FPV</a></abbr> drone i wanty to build not a simple one</p></li>
+                        <li><p>I've been working hard to get my drone parts</p></li>
+                        <li><p>I'm building the <em>5inch drone</em></p></li>
+                    </ul>
+
+                <section>
+                    <h3>Places i want to fly my drone on:</h3>
+                    <!-- this is a example of unordered list list -->
+
+                    <ul>
+                        <li>
+                            <p>Tungnath is a Great Place to visit</p>
+                            <figure>
+                                <img src="image/tungnath.jpg" alt="Tungnath In Winters" title="Tungnath Mahadev In Uttarakhand" width="400" height="275" loading="lazy" >
+                                <figcaption>
+                                    Tungnath Mahadev In Winters!
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Places I Want to Avoid</h3>
+                    <dl>
+                        <dt>North Pole</dt>
+                        <dd>I hear this is <strong>cold</strong>!</dd>
+    
+                        <dt>South Pole</dt>
+                        <dd>This is also cold.</dd>
+    
+                        <dt>Mountain Tops</dt>
+                        <dd>These are also cold.</dd>
+                    </dl>
+                </section>
+
+                <address>
+                    Tungnath, Chopta, Rudraprayag district,<br>
+                    Uttarakhand, India
+                </address>
+            </article>
+
+            <hr>
+
+            <article id="contact">
+                <h2>Contact Me</h2>
+                <p>I'd really like to hear from you</p>
+                
+                <form action="https://httpbin.org/get" method="get">
+                    <fieldset>
+                        <legend>Personal Info</legend>
+                        <p>
+                            <label for="firstName">First Name:</label>
+                            <input type="text" name="firstName" id="firstName" placeholder="Andrew" autocomplete="on" required autofocus>
+                        </p>
+                        <p>
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="James" autocomplete="on" required>
+                        </p>
+                        <p>
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" id="password" placeholder="Secret Code" required>
+                        </p>
+                        <p>
+                            <label for="Phone">Phone:</label>
+                            <input type="tel" name="Phone" id="Phone" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                        </p>
+                        <p>
+                            <label for="decade">Favorite Decade:</label>
+                            <input type="number" name="decade" id="decade" min="1970" max="2024" step="10" value="1970"> 
+                        </p>
+                        <p>
+                            <label for="coffee">Favorite Coffee:</label>
+                            <select name="coffee" id="coffee" multiple size="5">
+                                <optgroup label="Coffees">
+                                    <option value="regular coffee">Regular Coffee</option>
+                                    <option value="iced coffee">Iced Coffee</option>
+                                </optgroup>
+                                <optgroup label="Espresso Drinks">
+                                    <option value="latte" selected>latte</option>
+                                    <option value="cappuccino">Cappuccino</option>
+                                    <option value="cortado">Cortardo</option>
+                                    <option value="americano">Americano</option>
+                                </optgroup>
+                                <option value="other">Other</option>
+                            </select>
+                        </p>
+                        <!-- Taking input using datalist -->
+                        <!-- <p>
+                            <label for="coffee">Favourite Coffee:</label>
+                            <input type="text" name="coffee" id="coffee" list="coffee-list">
+                            <datalist id="coffee-list">
+                                <option value="coffee">
+                                <option value="latte">
+                                <option value="espresso">   
+                                <option value="cortardo">
+                                <option value="americano">
+                                <option value="other">    
+                            </datalist>
+                        </p> -->
+                    </fieldset>
+                    <fieldset>
+                        <legend>What is your favorite food?</legend>
+                        <p>
+                            <input type="radio" name="food" id="momos" value="momos">
+                            <label for="momos">Momos</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="food" id="hakkanoodles" value="hakkanoodles">
+                            <label for="hakkanoodles">Hakka Noodles</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="food" id="CholeyKulchey" value="CholeyKulchey">
+                            <label for="CholeyKulchey">Choley Kulchey</label>
+                        </p>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>About Your Drone Parts</legend>
+                        <p>
+                            <input type="checkbox" name="drone" id="motors" value="motors">
+                            <label for="motors">BLDC Motors</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="drone" id="propellers" value="propellers">
+                            <label for="propellers">Propellers</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="drone" id="esc" value="esc">
+                            <label for="esc">Electronic Speed Controller</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="drone" id="FlightController" value="FlightController">
+                            <label for="FlightController">Flight Controller</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="drone" id="gps" value="gps">
+                            <label for="gps">GPS</label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Send me a review about this web page</legend>
+                        <label for="message">Your Message:</label>
+                        <br>
+                        <textarea name="message" id="message" cols="150" rows="10" placeholder="Type your review here..."></textarea>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Submit</button>
+                    <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </article>
+        </main>
+
+        <hr>
+
+        <footer>
+                 
+            <p>
+                <!-- these are html entities -->
+                &lt;&lt;&lt; &copy; <a href="about.html"> AYUSH KASHYAP  </a>&gt;&gt;&gt;
+            </p>
+
+            <p>
+                <a href="#">Back To Top</a>
+            </p>
+
+        </footer>
+    </body>
+
+</html>
