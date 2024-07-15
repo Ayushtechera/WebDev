@@ -1,0 +1,35 @@
+<!-- In this code we are going to see in how many ways we can apply the css to the html page the ways are following:
+-External StyleSheet
+-Internal StyleSheet
+-Apply css inline with an element. -->
+
+<!-- Only that style sheet will be readed and shown on to the page which is read by the browser at last only that stylesheet will be precedent than other  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- External Style sheet -->
+     <!-- In external style our css file has a separate file in directory -->
+     <link rel="stylesheet" href="css/style.css">
+
+
+     <!-- Internal Style Sheet  -->
+      <!-- In internal style we can add styling in our html file only eg below: -->
+     <style>
+        p {
+            color:brown;
+        }
+     </style>
+     
+</head>
+<body>
+    <!-- Inline adding of css  -->
+     <!-- In this type of style we can add styling in the html with p tag. -->
+    <p style="color: blue;">I'm here to learn css!</p>
+</body>
+</html>
