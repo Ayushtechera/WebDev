@@ -1,0 +1,80 @@
+/* The three type of selectors are:-
+-Element Selector 
+-Class Selector
+*/
+
+
+/* We can also use the html selector to make changes at whole page at once */
+html{
+    font-size: 26px;
+}
+
+/* Also use main element it is a semantic element which is allow 1/per page, it will only change those things which are there in <main>tag in html file*/
+/* It will not change main  heading since it is not there in the main tag */
+/* main{
+    font-family: monospace;
+} */
+
+/*1st.Element selector:-
+These type of selector are used to access all the content present in body tag, it will apply all changes to all the content in body tag.*/
+body{
+    
+}
+/* this is also,element selector */
+p{
+    /* color: red!important; */
+    color: red;
+}
+
+/* Adding !important will override everything in written after it */
+
+
+
+/* 2nd type Class Selector
+this selector makes the changes at a specific area that we want but for that we need to decalare a class in paragraph tag like <p class="ayush"></p>
+It is more specific than element selector.*/
+.ayush{
+    color:lightseagreen;
+}
+
+
+
+/* 3rd type Id Selector 
+This selector is more specific than element and class seletor because it is specificlly adress the second paragraph and id's in html should be unique and exist only once so, it can make more specific changes , but for you have to insitailise the id attribute in the paragaraph tag of html
+like :-  <p id="second" class="ayush"> </p> like this you have mentioned the id in p tag. */
+
+#second{
+    font-style: italic;
+}
+
+
+/* 4th type Group Selector 
+ this will select all the h1 and h2 headings in the page and will all of them change them*/
+h1,h2{
+    color: blue;
+}
+
+
+/* Another version of group
+ this will check that if span is present inside the p tag then it will make changes to all the span used in p*/
+ /* p span{
+    font-style: italic;
+ } */
+/* Instea of this we can use the below one */
+.highlight{
+    text-transform: uppercase;
+    background-color: goldenrod;
+}
+
+
+ /* 5th type universal selector 
+ /* it will select all the content from the page and will change it */
+ /* *{
+    font-family: 'Courier New', Courier, monospace;
+ } */
+
+
+ /* Specificity are:
+  id selector > class selector > element selector*/
+
+
