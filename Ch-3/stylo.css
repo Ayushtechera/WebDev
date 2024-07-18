@@ -1,0 +1,18 @@
+body{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.15;
+    /* We can change th background colour with the background property*/
+    background: rgb(255, 239, 213);
+    /* We can chnage the colour of the text */
+    color: rgb(162, 6, 58);
+}
+
+p{
+    /* rgb is normally red green and blue and a at last means alpha, and that insures the transparency of the text it has a value from 0 to 1 */
+    color: rgba(0, 0,0,0.5);
+
+    /* hexadecimal:- it works like the rgb but it has its own way to code the value it has values from 0 to 9 and letters from A to F*/
+    /* color: #000000; */
+    /* color: #0000FF; */
+}
