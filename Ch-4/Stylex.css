@@ -1,0 +1,60 @@
+/* We dont use font absolute size for paragraph content or we can say browser will handle the size of the text 
+We shouldn't set a font size beceause we want to let the browser handle that and set the default font size*/
+
+
+
+
+/* 1st relative Unit:- percentage*/
+/* header{
+    width: 100%;
+} */
+/* width percentage:- HEre as we mentioned in header width is 100% and since h1 is in header and width mentioned in h1 50% means it is using 50% from the header and header is using 100% of page width*/
+h1{
+    border: 2px dashed black;
+    width: 50%;
+    font-size: 3rem;
+    padding: 0.5em;  
+}
+
+
+/* 2nd type of relative Unit:- rem(rootelement) 
+it will only check the browsers deffault size and will set it, deffault size is 16 pixel*/
+/* p{
+    font-size: 2rem;
+} */
+
+
+/* 3rd type of relative unit:- ch(character)  
+It helps us to limit the character in a particular line like eg below: we only need 40 character per line */
+p{
+    font-size: 2rem;
+    width: 40ch;
+
+}
+
+/* 4th type of relative unit:- vw(viewport width) */
+
+
+*{
+    /* To see the changes we need to make margin, padding and box size 0 that's why we making it zero */
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%; /* We are using % instead to remove the bottom scroll bar */
+    /* height of the page increase as the content of the page increases but if we don't have enough content and we want to increase the height of the page then we do it like this below: */
+    min-height: 1000vh;
+
+}
+main{
+    /* By doing this, the width of paragraph is exceding the width of the main element */
+    width: 50vw;
+    background-color: beige; 
+    font-size: 2rem;
+}
+
+
+
+
