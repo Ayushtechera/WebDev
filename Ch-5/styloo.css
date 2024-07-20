@@ -1,0 +1,26 @@
+/* Just doing darktheme of the page fpr eyes */
+body{
+    background-color:#333;
+    color: whitesmoke;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    /*content-box
+      1. It is deffault.
+      2. when we use content box:- it means the size we set for content is for content only it doesn't include the padding or the border size or the margin.*/
+    /* box-sizing: content-box; */
+
+    /* border-box 
+       1. When we use border-box, the content is not going to take all the width but it will divide the siez between content,padding,border, and total of all will be 400 pixels */
+    box-sizing: border-box;
+}
+
+
+header{
+    border: 2px dashed whitesmoke;
+    width: 400px;
+    padding: 0.5em;
+
+}
