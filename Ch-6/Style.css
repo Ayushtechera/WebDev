@@ -1,0 +1,59 @@
+/* 
+
+typography is the way that text is arranged and presented.
+
+*/
+
+body{
+    padding: 10%;
+    font-size: 2rem;
+    /* font-family: sans-serif; this will ensure the style of content not specific paragraph but for whole body of the page */
+    font-family: 'Courier New', Courier, monospace; there is there designs if 1st is not installed on the system it will check 2nd and if 2nd also not installed on the system then it will check for the 3rd font styling
+                      
+}
+/* Font size and everything related to text gets inherited in the next child class but it is not inherited in forms*/
+/* input,button{
+    font:inherit;
+} */
+
+
+
+p{
+    /* 1st Text Setting - text-decoration */
+
+    /* text-decoration: underline; This underline the content in paragraph tag */
+    /* text-decoration: overline;  This will draw the line over the content */
+    /* text-decoration: line-through; This will draw the line on the content present inside the paragraph tag */
+    /* text-decoration: none; none: is deffault */
+
+    /* 2nd Text Setting - text-transform */
+
+    /* text-transform: capitalize; It will capitalize the 1st letter of each word */
+    /* text-transform: lowercase; It will lowercase all the letters of the content */
+    /* text-transform: uppercase; It will uppercase all the letters of the content */
+    
+    /* 3rd Text Setting - text-align */
+
+    /* text-align: left; will align the text in the left     */
+    /* text-align: right; will align the text in the right      */
+    /* text-align: justify; will align the text equally from both the side from left as well from right      */
+    /* text-align: left; will align the text in the left      */
+
+    /* 4th Text Setting - text-indent */
+
+    /* text-indent: 4em; This will make indent/space in 1st line from right side. */
+
+    /* Another settings that do not starts from text- as above*/
+    /* line-height: 1.25; this will ensures the height between the lines  */
+    /* letter-spacing: 0.1em; this will ensures the spacing between the letters  */
+    /* Similarly word spacing works */
+    /* word-spacing: 0.1em; */
+
+
+    /* Now Looking into some font properties */
+     
+    /* font-weight: bold;  This will ensure the boldness of the content */
+    /* font-style: italic;  This will ensure style of the content like whether it is italic or bold. */
+
+
+}
