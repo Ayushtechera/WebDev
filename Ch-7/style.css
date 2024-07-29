@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    padding: 10%;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* We'll learn styling of links in this chapter */
+
+/* If you notice links have some deffault styling on them like:
+    1. All links are underlined
+    2. When we take our cursor to the link it will converted to pointer hand.
+    3. When we click on the link it will turned out orange in colour
+    4. When once the link it visited then it will turned into purple colour otherwise blue colour */
+
+/* Since all links are there in anchor tag <a href="link"><a/> so we are gonna use anchor tag to to modifiy the links*/
+
+a {
+    /* Removing underline from all the links by using none
+    text-decoration: none; */
+
+    /* We can also set the cursors
+    cursor: pointer ; */
+
+    /* We can also change the colour of visited links
+    color: blue; */
+
+    /* All the above styling are by deffault*/
+
+    color: hsl(207, 86%, 54%);
+
+}
+
+/* Pseudo class : these pseudo classes represent the current state of the element because state of an anchor element can
+ change, it has either been visited or it hasn't there are some others that we'll cover as well 
+ So for visited first is below:  */
+
+a:visited{
+    color: purple;
+}
+
+/* Another example of pseudo class that is hover: & focus: focus is used when user is not using mouse and tabbing over the
+ page then a box come up on the links when we tab on it */
+a:hover, a:focus {
+    /* color: dodgerblue; */
+    /* color: hsl(207, 98%, 47%, 0.8); */
+    opacity: 0.8; /*We can use opacity also to hover over the links*/
+    background-color: darkseagreen;
+}
+
+/* using pseudo class: active for changing the colour of active links */
+a:active{
+    color: rgb(2, 185, 15);
+}
