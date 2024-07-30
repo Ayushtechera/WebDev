@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body{
+    padding: 5% 10%;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Properties/styles of ordered lists */
+ol{
+    list-style-type: lower-alpha; /*We can try different setting by our own*/
+    padding: 0;
+}
+
+ul{
+    list-style-type:square;
+    text-align: center;
+
+    /*Helping square bullets to keep with the text as text is in the center the bullets also be in center*/
+    list-style-position: inside; 
+
+    /*This will set bullet colour as well as text */
+    color:blue; 
+
+    /*Help us having space between each line*/
+    line-height: 1.6; 
+
+    /* list-style-image: url('../image/final4.png');
+    list-style: square url('../image/final4.png') outside;  */
+
+    /* both square and image means is if image is not downloaded then square will showed up automatically and outside is keeping aways from align center as we have done inside in above line it's just oppo. of inside */
+
+}
+
+/* to override styles of each list item like eg: */
+
+/*This will change the colour of all the list item of all type of list no matter whether it is ordered or unordered*/
+li{
+    color: red; 
+}
+
+/* to make specific change in the item of list item then we can do it like: */
+ul li{
+    color: grey;
+}
+
+/* Now if we wanted to make the second list item red of unordered list*/
+/* We can make it by using pseudo class*/
+ul li:nth-child(2){
+    color: blueviolet;
+}
+/* Our nth-child pseudo clas also accept words like items at odd place or even place eg */
+/* And we set any other also except colour of the item */
+ol li:nth-child(odd){
+    color: blueviolet;
+}
+
+
+/* New Topic:- Pseudo Element it is called marker and it start with ::and the word marker And all pseudo elements start with double colon :: insteadt of one like pseudo class-like eg below: */
+
+/* Marker pseudo element will decide how our bullets of list item will look like  */
+ul ::marker{
+    color:#f77903;
+    font-family: fantasy;
+    font-size: 1em;
+    content:"only 2.99$ >>  ";
+
+
+}
+*{
+    background-color:dimgrey;
+}
+
